@@ -4,6 +4,30 @@
 <head>
   <link href="homepage_style.css" type="text/css"
         rel="stylesheet" />
+        
+        <style>
+        
+          .username{
+            font-weight: bold;  
+          }
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+      </style>
 </head>
 
 <body>
@@ -12,12 +36,55 @@
   <hr>
   <h2>Top Three Athletes</h2>
   <br>
-  <img src="LiamWelch.jpg"
+
+  <div class="row">
+    <div class="column">
+      <img src="LiamWelch.jpg" alt="Liam Welch" width="200" height="250">
+      <p class="username"> <a href="https://www.instagram.com/ljwelch7/?hl=en">Instagram</a>
+        <a href="https://www.facebook.com/liam.welch.35">Facebook</a>
+        <a href="https://twitter.com/ljwelch7?lang=en">Twitter</a>
+      </p>
+      <p>Liam Welch is the starting QB for Samford.</p>
+    </div>
+
+    <div class="column"> 
+      <img src="TyHatcher.jpg" alt="Ty Hatcher" width="200" height="250">
+      <p class="username"> <a href="https://www.instagram.com/t_hatch_18/?hl=en">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=100009213557176">Facebook</a>
+        <a href="https://twitter.com/tyhatcher18?lang=en">Twitter</a>
+      </p>
+      <p>Ty Hatcher is the backup QB for Samford.</p>
+    </div>
+
+    <div class="column"> 
+      <img src="TyBoles.jpg" alt="Ty Boles" width="200" height="250">
+      <p class="username"> <a href="https://www.instagram.com/tyboles3/?hl=en">Instagram</a>
+        <a href="https://www.facebook.com/GameChangerSP">Facebook</a>
+        <a href="https://twitter.com/tyboles3?lang=en">Twitter</a>
+      </p>
+      <p>Ty Boles is a runningback for Samford.</p>
+    </div>
+
+  <!--  <div class="column">
+      <img src="img_mountains.jpg" alt="Mountains" style="width:100%">
+    </div>
+  </div>
+
+   <img src="LiamWelch.jpg"
     width="200" height="250">
+    <p class="username"> <a href="https://www.instagram.com/ljwelch7/?hl=en">@ljwelch7</a></p>
+    <p>Liam Welch is the starting QB for Samford.</p>
+    
+  <img src="TyHatcher.jpg"
+    width="200" height="250">
+    <p class="username"> <a href="https://www.instagram.com/ljwelch7/?hl=en">@ljwelch7</a></p>
+    <p>Ty Hatcher is the backup QB for Samford.</p>
+
+  -->
   <h2>How We Create a Score</h2>
   <br>
   <br>
-  <br>
+  <br> 
   <h2>How Can I Improve My Score?</h2>
 
 </body>
