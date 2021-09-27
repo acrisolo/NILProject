@@ -34,6 +34,6 @@ for comps in body.find_all('tbody'):
     rows = comps.find_all('tr')
     for row in rows:
         comp_scores = row.find_all('td', class_="Table__TD")[2].text
-        f.write(comp_scores + "%\t")
+        f.write(comp_scores + "\t")
 
 f.close()
