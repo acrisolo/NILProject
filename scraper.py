@@ -20,6 +20,7 @@ f = open(filename, 'w')
 headers = 'Completion Scores \n'
 f.write(headers)
  
+#pulls year
 for heads in header.find_all('tbody'):
     lines = heads.find_all('tr')
     for line in lines:
@@ -28,10 +29,11 @@ for heads in header.find_all('tbody'):
 
 f.write("\n")
 
+#pulls completion percentage
 for comps in body.find_all('tbody'):
     rows = comps.find_all('tr')
     for row in rows:
         comp_scores = row.find_all('td', class_="Table__TD")[2].text
-        f.write(comp_scores + "\t")
+        f.write(comp_scores + "%\t")
 
 f.close()
