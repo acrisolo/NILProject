@@ -38,7 +38,7 @@ h2{
   color: white;
 }
 
-.button2, .button3, .button4, .button5 {
+.button2, .button3, .button4, .button5, .button6 {
   background-color: white;
   color: black;
   border: 2px solid #707371;
@@ -46,7 +46,7 @@ h2{
   border-radius: 12px;
 }
 
-.button2:hover, .button3:hover, .button4:hover, .button5:hover {
+.button2:hover, .button3:hover, .button4:hover, .button5:hover, .button6:hover {
   background-color: #707371;
   color: white;
 }
