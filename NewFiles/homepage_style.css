@@ -67,3 +67,10 @@ h2{
   clear: both;
   display: table;
 }
+
+.column2 {
+  float: left;
+  width: 50%;
+  color: white;
+  text-align: center;
+}
