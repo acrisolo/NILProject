@@ -64,54 +64,103 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     </div>
   </header>
   
-  <!-- First Photo Grid-->
+  <!-- First Table Grid-->
   <div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="Images/LiamWelch.jpg" alt="LiamWelch" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Liam Welch</b></p>
-        <p>Statistics will be entered in this section.</p>
-      </div>
-    </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="Images/QuincyCrittendon.jpeg" alt="QCrittendon" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Quincy Crittendon</b></p>
-        <p>Statistics will be entered in this section.</p>
-      </div>
-    </div>
-    <div class="w3-third w3-container">
-      <img src="Images/TyHatcher.jpg" alt="TyHatcher" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Ty Hatcher</b></p>
-        <p>Statistics will be entered in this section.</p>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Second Photo Grid-->
-  <div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="/w3images/p1.jpg" alt="Football" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Football Player</b></p>
-        <p>Statistics will be entered in this section.</p>
-      </div>
-    </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="/w3images/p2.jpg" alt="Football" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Football Player</b></p>
-        <p>Statistics will be entered in this section.</p>
-      </div>
-    </div>
-    <div class="w3-third w3-container">
-      <img src="/w3images/p3.jpg" alt="Football" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Football Player</b></p>
-        <p>Statistics will be entered in this section.</p>
-      </div>
-    </div>
+    <head>
+      <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+      </style>
+      </head>
+      <body>
+      
+      <table>
+        <tr>
+          <th>Rank</th>
+          <th>Name</th>
+          <th>Indexed Score</th>
+          <th>Sport</th>
+          <th>Gender</th>
+          <th>University</th>
+          <th>Twitter Followers</th>
+          <th>Twitter Engagement</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Liam Welch</td>
+          <td>100</td>
+          <td>Football</td>
+          <td>Male</td>
+          <td>Samford</td>
+          <td>1000</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Ty Hatcher</td>
+          <td>99</td>
+          <td>Football</td>
+          <td>Male</td>
+          <td>Samford</td>
+          <td>999</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Asher Morgan</td>
+          <td>98</td>
+          <td>Football</td>
+          <td>Male</td>
+          <td>Samford</td>
+          <td>998</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Quincy Crittendon</td>
+          <td>97</td>
+          <td>Football</td>
+          <td>Male</td>
+          <td>Samford</td>
+          <td>997</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Will Hudson</td>
+          <td>96</td>
+          <td>Football</td>
+          <td>Male</td>
+          <td>Samford</td>
+          <td>996</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Miles Morris</td>
+          <td>95</td>
+          <td>Football</td>
+          <td>Male</td>
+          <td>Samford</td>
+          <td>995</td>
+          <td>5</td>
+        </tr>
+      </table>
+      
+      </body>
   </div>
 
   <!-- Pagination -->
@@ -129,14 +178,16 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <!-- Images of Me -->
   <div class="w3-row-padding w3-padding-16" id="about">
     <div class="w3-col m6">
-      <img src="Images/Sports Analytics.jpg" alt="Samford University Center for Sports Analytics" style="width:200%">
+      <img src="Images/Sports Analytics.jpg" alt="Samford University Center for Sports Analytics" style="width:100%">
     </div>
-    
+    <div class="w3-col m6">
+      <img src="Images/Affinio.png" alt="Affinio" style="width:100%">
+    </div>
   </div>
 
   <div class="w3-container w3-padding-large" style="margin-bottom:32px">
     <h4><b>About the Samford University NIL Resource</b></h4>
-    <p>The Samford University Athletic Resource was developed by Computer Science students within the University in conjunction with advisement from the Center for Sports Analytics.</p>
+    <p>The Samford University Athletic Resource was developed by Computer Science students within the University in conjunction with advisement from the Center for Sports Analytics and data from Affinio.</p>
     <hr>
     
     <!--
@@ -202,7 +253,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <div class="w3-row-padding">
     <div class="w3-third">
       <h3>Last Updated:</h3>
-      <p>October 23, 2021</p>
+      <p>October 25, 2021</p>
 <a href = "https://www.samford.edu/sports-analytics/">Visit our Main Page</a>
       </p>
     </div>
