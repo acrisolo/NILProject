@@ -54,13 +54,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
     <div class="w3-container">
     <h1><b>Collegiate Athletes</b></h1>
-    <div class="w3-section w3-bottombar w3-padding-16">
-      <span class="w3-margin-right">Filter:</span> 
-      <button class="w3-button w3-black">ALL</button>
-      <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i> Football</button>
-      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Basketball</button>
-      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i> Track</button>
-    </div>
     </div>
   </header>
   
@@ -84,84 +77,133 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         background-color: #dddddd;
       }
       </style>
-      </head>
-      <body>
-      
-      <table>
-        <tr>
-          <th>Rank</th>
-          <th>Name</th>
-          <th>Indexed Score</th>
-          <th>Sport</th>
-          <th>Gender</th>
-          <th>University</th>
-          <th>Twitter Followers</th>
-          <th>Twitter Engagement</th>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Liam Welch</td>
-          <td>100</td>
-          <td>Football</td>
-          <td>Male</td>
-          <td>Samford</td>
-          <td>1000</td>
-          <td>5</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Ty Hatcher</td>
-          <td>99</td>
-          <td>Football</td>
-          <td>Male</td>
-          <td>Samford</td>
-          <td>999</td>
-          <td>5</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>Asher Morgan</td>
-          <td>98</td>
-          <td>Football</td>
-          <td>Male</td>
-          <td>Samford</td>
-          <td>998</td>
-          <td>5</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>Quincy Crittendon</td>
-          <td>97</td>
-          <td>Football</td>
-          <td>Male</td>
-          <td>Samford</td>
-          <td>997</td>
-          <td>5</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>Will Hudson</td>
-          <td>96</td>
-          <td>Football</td>
-          <td>Male</td>
-          <td>Samford</td>
-          <td>996</td>
-          <td>5</td>
-        </tr>
-        <tr>
-          <td>6</td>
-          <td>Miles Morris</td>
-          <td>95</td>
-          <td>Football</td>
-          <td>Male</td>
-          <td>Samford</td>
-          <td>995</td>
-          <td>5</td>
-        </tr>
-      </table>
-      
+      </head>      
       </body>
   </div>
+
+  <body class="mt32">
+    <div class="container">
+        <h3>
+            <span>Filter:</span>
+            <input type="search" placeholder="Search..." class="form-control search-input" data-table="customers-list"/>
+        </h3>
+        <table class="table table-striped mt32 customers-list">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Indexed Score</th>
+                <th>Sport</th>
+                <th>Gender</th>
+                <th>University</th>
+                <th>Twitter Followers</th>
+                <th>Twitter Engagement</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Liam Welch</td>
+                <td>100</td>
+                <td>Football</div></td>
+                <td>Male</td>
+                <td>Samford</td>
+                <td>1000</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Ty Hatcher</td>
+                <td>99</td>
+                <td>Football</td>
+                <td>Male</td>
+                <td>Samford</td>
+                <td>999</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Asher Morgan</td>
+                <td>98</td>
+                <td>Football</td>
+                <td>Male</td>
+                <td>Samford</td>
+                <td>998</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Quincy Crittendon</td>
+                <td>97</td>
+                <td>Football</td>
+                <td>Male</td>
+                <td>Samford</td>
+                <td>997</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Will Hudson</td>
+                <td>96</td>
+                <td>Football</td>
+                <td>Male</td>
+                <td>Samford</td>
+                <td>996</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Miles Morris</td>
+                <td>95</td>
+                <td>Football</td>
+                <td>Male</td>
+                <td>Samford</td>
+                <td>995</td>
+                <td>5</td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+    <script>
+        (function(document) {
+            'use strict';
+
+            var TableFilter = (function(myArray) {
+                var search_input;
+
+                function _onInputSearch(e) {
+                    search_input = e.target;
+                    var tables = document.getElementsByClassName(search_input.getAttribute('data-table'));
+                    myArray.forEach.call(tables, function(table) {
+                        myArray.forEach.call(table.tBodies, function(tbody) {
+                            myArray.forEach.call(tbody.rows, function(row) {
+                                var text_content = row.textContent.toLowerCase();
+                                var search_val = search_input.value.toLowerCase();
+                                row.style.display = text_content.indexOf(search_val) > -1 ? '' : 'none';
+                            });
+                        });
+                    });
+                }
+
+                return {
+                    init: function() {
+                        var inputs = document.getElementsByClassName('search-input');
+                        myArray.forEach.call(inputs, function(input) {
+                            input.oninput = _onInputSearch;
+                        });
+                    }
+                };
+            })(Array.prototype);
+
+            document.addEventListener('readystatechange', function() {
+                if (document.readyState === 'complete') {
+                    TableFilter.init();
+                }
+            });
+
+        })(document);
+    </script>
+  
 
   <!-- Pagination -->
   <div class="w3-center w3-padding-32">
@@ -253,7 +295,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <div class="w3-row-padding">
     <div class="w3-third">
       <h3>Last Updated:</h3>
-      <p>October 25, 2021</p>
+      <p>October 29, 2021</p>
 <a href = "https://www.samford.edu/sports-analytics/">Visit our Main Page</a>
       </p>
     </div>
