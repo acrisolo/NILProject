@@ -6,10 +6,10 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-</style>
-<body class="w3-light-grey w3-content" style="max-width:1750px">
+<link href="newtemplate.css" type="text/css"rel="stylesheet" />
+<script src="newtemplate.js"></script>
+
+<body class="header" class="w3-light-grey w3-content">
   <div id="banner">
     <div id="wrapper">
         <div id="container">
@@ -23,13 +23,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
       <i class="fa fa-remove"></i>
     </a>
-    <img src="Images/Samford Athletics Resource.png" style="width:45%;" class="w3-round"><br><br>
+    <img class="sam_pic" src="Images/Samford Athletics Resource.png"  class="w3-round"><br><br>
     <h4><b>Name, Image, & Likeness</b></h4>
     <p class="w3-text-grey">Samford University NIL Resource</p>
   </div>
   <div class="w3-bar-block">
-    <a href="#athletes" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>ATHLETES</a> 
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a href="#athletes" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>ATHLETES</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
   </div>
   <div class="w3-panel w3-large">
@@ -43,10 +43,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 </nav>
 
 <!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<div class="overlay_small_screen" class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()"  title="close side menu" id="myOverlay"></div>
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:300px">
+<div class="page_content" class="w3-main">
 
   <!-- Header -->
   <header id="athletes">
@@ -56,28 +56,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <h1><b>Collegiate Athletes</b></h1>
     </div>
   </header>
-  
+
   <!-- First Table Grid-->
   <div class="w3-row-padding">
-    <head>
-      <style>
-      table {
-        font-family: arial, sans-serif;
-        border-collapse: collapse;
-        width: 100%;
-      }
-      
-      td, th {
-        border: 1px solid #dddddd;
-        text-align: left;
-        padding: 8px;
-      }
-      
-      tr:nth-child(even) {
-        background-color: #dddddd;
-      }
-      </style>
-      </head>      
+
       </body>
   </div>
 
@@ -164,46 +146,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
             </tbody>
         </table>
     </div>
-    <script>
-        (function(document) {
-            'use strict';
-
-            var TableFilter = (function(myArray) {
-                var search_input;
-
-                function _onInputSearch(e) {
-                    search_input = e.target;
-                    var tables = document.getElementsByClassName(search_input.getAttribute('data-table'));
-                    myArray.forEach.call(tables, function(table) {
-                        myArray.forEach.call(table.tBodies, function(tbody) {
-                            myArray.forEach.call(tbody.rows, function(row) {
-                                var text_content = row.textContent.toLowerCase();
-                                var search_val = search_input.value.toLowerCase();
-                                row.style.display = text_content.indexOf(search_val) > -1 ? '' : 'none';
-                            });
-                        });
-                    });
-                }
-
-                return {
-                    init: function() {
-                        var inputs = document.getElementsByClassName('search-input');
-                        myArray.forEach.call(inputs, function(input) {
-                            input.oninput = _onInputSearch;
-                        });
-                    }
-                };
-            })(Array.prototype);
-
-            document.addEventListener('readystatechange', function() {
-                if (document.readyState === 'complete') {
-                    TableFilter.init();
-                }
-            });
-
-        })(document);
-    </script>
-  
 
   <!-- Pagination -->
   <div class="w3-center w3-padding-32">
@@ -227,14 +169,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     </div>
   </div>
 
-  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+  <div class="about" class="w3-container w3-padding-large">
     <h4><b>About the Samford University NIL Resource</b></h4>
     <p>The Samford University Athletic Resource was developed by Computer Science students within the University in conjunction with advisement from the Center for Sports Analytics and data from Affinio.</p>
     <hr>
-    
+
     <!--
     <h4>Technical Skills</h4>
-    
+
     <p>Photography</p>
     <div class="w3-grey">
       <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:95%">95%</div>
@@ -299,7 +241,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 <a href = "https://www.samford.edu/sports-analytics/">Visit our Main Page</a>
       </p>
     </div>
-  
+
     <div class="w3-third">
       <h3>Recent Updates:</h3>
       <ul class="w3-ul w3-hoverable">
@@ -312,7 +254,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
           <img src="Images/SportAnalyticProfile.jpg" class="w3-left w3-margin-right" style="width:50px">
           <span class="w3-large">Creation</span><br>
           <span>The website to track NIL was created.</span>
-        </li> 
+        </li>
       </ul>
     </div>
 
@@ -329,24 +271,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
   </div>
   </footer>
-  
+
   <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
 
 <!-- End page content -->
 </div>
 
-<script>
-// Script to open and close sidebar
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
-</script>
 
 </body>
 </html>
