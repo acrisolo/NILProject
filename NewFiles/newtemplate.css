@@ -1,0 +1,34 @@
+h1,h2,h3,h4,h5,h6{
+  font-family: "Raleway", sans-serif
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.sam_pic{
+  width:45%
+}
+.overlay_small_screen{
+  cursor:pointer
+}
+.header{
+  max-width:1750px
+}
+.page_content{
+  margin-left:300px
+}
+.about{
+  margin-bottom:32px
+}
