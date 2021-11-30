@@ -5,110 +5,67 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-
-
-
-
 <!-- This brings in necessary tools for our sort and search table-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet"> <!-- Corresponds to id:dataTable -->
 <link href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+<link href="WorkingTable.css" type="text/css" rel="stylesheet">
 <!-- Bootstrap core JavaScript-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!-- Page level plugin JavaScript-->
 <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
 
+<!-- Header -->
+<div class="page">
+  <!-- Circle Icon -->
+<header tabindex="0" id="athletes">
+  <a href="#"><img src="Images/Samford Athletics Resource.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
 
+<!-- Nav Slide -->
+  <div id="nav-container">
+    <div class="bg"></div>
+    <div class="button" tabindex="0">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </div>
+    <div id="nav-content" tabindex="0">
+      <div class= "nav-slide">
+        <h2>Navigation Slide</h2>
+        <hr>
+        </div>
+      <ul>
+        <li><a href="#0">Home</a></li>
+        <li><a href="#0">Services</a></li>
+        <li><a href="#0">Blog</a></li>
+        <li><a href="#0">About</a></li>
+        <li><a href="#0">Contact</a></li>
+        <li class="small"><a href="#0">Facebook</a><a href="#0">Instagram</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
 
-
-
-<!-- CSS Style -->
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-</style>
+<!-- Body -->
 <body class="w3-light-grey w3-content" style="max-width:1750px">
   <div id="banner">
-    <div id="wrapper">
+     <div id="wrapper">
         <div id="container">
-              <img class="banner-img" img src="Images/Header.png" alt="NIL Header"></a>
+              <img class="banner-img" img src="Images/Header.png" alt="NIL Header">
         </div>
-    </div>
-</div>
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
-  <div class="w3-container">
-    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
-      <i class="fa fa-remove"></i>
-    </a>
-    <img src="Images/Samford Athletics Resource.png" style="width:45%;" class="w3-round"><br><br>
-    <h4><b>Name, Image, & Likeness</b></h4>
-    <p class="w3-text-grey">Samford University NIL Resource</p>
-  </div>
-  <div class="w3-bar-block">
-    <a href="#athletes" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>ATHLETES</a> 
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
-  </div>
-  <div class="w3-panel w3-large">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-</nav>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:300px">
-
-  <!-- Header -->
-  <header id="athletes">
-    <a href="#"><img src="Images/Samford Athletics Resource.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
-    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
-    <div class="w3-container">
-    <h1> <p></p><b>Collegiate Athletes</b></h1>
-    </div>
-  </header>
-  
-  <!-- First Table Grid (Not sure what this does)-->
-  <div class="w3-row-padding">
-    <head>
-      <style>
-      table {
-        font-family: arial, sans-serif;
-        border-collapse: collapse;
-        width: 100%;
-      }
-      
-      td, th {
-        border: 1px solid #dddddd;
-        text-align: left;
-        padding: 8px;
-      }
-      
-      tr:nth-child(even) {
-        background-color: #dddddd;
-      }
-      </style>
-      </head>      
-      </body>
-  </div>
-
-
-  
-
-
-  <!-- New Table Code that works!-->
     <div class="container">
-        
-      <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-        <thead>
+      <div class="w3-row-padding">
+        <div class="w3-container">
+
+        <h1> <p></p><b>Collegiate Athletes</b></h1>
+
+
+<!-- New Table Code that works!-->
+<div class= "table-correction">
+<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0"> <!-- The id is what's wrong with it -->
+  <thead>
     <tr>
       <th>Rank</th>
       <th>Name</th>
@@ -119,8 +76,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       <th>Twitter Followers</th>
       <th>Twitter Engagement</th>
     </tr>
-        </thead>
-        <tfoot>
+  </thead>
+  <tfoot>
     <tr>
       <th>Rank</th>
       <th>Name</th>
@@ -131,8 +88,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       <th>Twitter Followers</th>
       <th>Twitter Engagement</th>
     </tr>
-        </tfoot>
-        <tbody>
+  </tfoot>
+  <tbody>
     <tr>
       <td>1</td>
       <td>Liam Welch</td>
@@ -243,8 +200,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       <td>995</td>
       <td>5</td>
     </tr>
-        </tbody>
-    </table>
+  </tbody>
+</table>
+</div>
 </div>
 
 <!--Extra script to help table work in addition to the api's in the top-->
@@ -255,16 +213,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 </script>
 <p></p>
 
-
-
-
-
-
+<!-- About Section (Bottom) -->
   <div class="w3-container w3-padding-large" style="margin-bottom:32px">
     <h4><b>About the Samford University NIL Resource</b></h4>
     <p>The Samford University Athletic Resource was developed by Computer Science students within the University in conjunction with advisement from the Center for Sports Analytics and data from Affinio.</p>
     <hr>
-    
+
   <!-- Contact Section -->
   <div class="w3-container w3-padding-large w3-grey">
     <h4 id="contact"><b>Contact Us</b></h4>
@@ -282,7 +236,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         <a href="tel:205-726-4477">205-726-4477</a><p></p>
       </div>
     </div>
-    
   </div>
 
   <!-- Footer -->
@@ -292,9 +245,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       <h3>Last Updated:</h3>
       <p>November 8, 2021</p>
 <a href = "https://www.samford.edu/sports-analytics/">Visit our Main Page</a>
-      </p>
     </div>
-  
+
     <div class="w3-third">
       <h3>Recent Updates:</h3>
       <ul class="w3-ul w3-hoverable">
@@ -307,7 +259,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
           <img src="Images/SportAnalyticProfile.jpg" class="w3-left w3-margin-right" style="width:50px">
           <span class="w3-large">Creation</span><br>
           <span>The website to track NIL was created.</span>
-        </li> 
+        </li>
       </ul>
     </div>
 
@@ -324,7 +276,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
   </div>
   </footer>
-  
+
   <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
 
    <!-- Images of the Project -->
@@ -336,22 +288,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       <img src="Images/Affinio.png" alt="Affinio" style="width:100%">
     </div>
   </div>
-  
+
 <!-- End page content -->
 </div>
-
-<script>
-// Script to open and close sidebar
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
-</script>
 
 </body>
 </html>
