@@ -1,0 +1,175 @@
+#CREATE DATABASE NIL;
+
+Use NIL;
+
+#DROP TABLE Athletes;
+
+CREATE TABLE Athletes(
+	firstName VARCHAR(20) NOT NULL,
+	lastName VARCHAR(20) NOT NULL,
+    sport VARCHAR(20) NOT NULL,
+    position VARCHAR(20) NOT NULL,
+    school_year VARCHAR(20) NOT NULL,
+	globalRating DECIMAL (4,2) NOT NULL,
+    school VARCHAR(20) NOT NULL
+);
+
+#Quarterbacks
+INSERT INTO Athletes VALUES ("Quincy", "Crittendon", "Football", "QB", "Freshman", 66.5, "Samford");
+INSERT INTO Athletes VALUES ("Liam", "Welch", "Football", "QB", "Graduate", 86.5, "Samford");
+INSERT INTO Athletes VALUES ("Asher", "Morgan", "Football", "QB", "Freshman", 45.7, "Samford");
+INSERT INTO Athletes VALUES ("Michael", "Maginnis", "Football", "QB", "Freshman", 57.5, "Samford");
+INSERT INTO Athletes VALUES ("Will", "Hudson", "Football", "QB", "Junior", 34.27, "Samford");
+INSERT INTO Athletes VALUES ("David", "Coleman", "Football", "QB", "Freshman", 87.5, "Samford");
+INSERT INTO Athletes VALUES ("Zak", "Burnett", "Football", "QB", "Freshman", 62.75, "Samford");
+INSERT INTO Athletes VALUES ("Cade", "Blackmon", "Football", "QB", "Sophomore", 77.4, "Samford");
+INSERT INTO Athletes VALUES ("Ty", "Hatcher", "Football", "QB", "Junior", 33.9, "Samford");
+
+#Cornerbacks
+INSERT INTO Athletes VALUES ("Kourtian", "Marsh", "Football", "CB", "Sophomore", 23.7, "Samford");
+INSERT INTO Athletes VALUES ("Coutrell", "Plair", "Football", "CB", "Graduate", 73.4, "Samford");
+INSERT INTO Athletes VALUES ("Sylvaughn", "Turner", "Football", "CB", "Senior", 63.8, "Samford");
+INSERT INTO Athletes VALUES ("Hakeem", "Johnson", "Football", "CB", "Senior", 62.3, "Samford");
+INSERT INTO Athletes VALUES ("Bryson", "Mullins", "Football", "CB", "Freshman", 56.2, "Samford");
+INSERT INTO Athletes VALUES ("Joshua", "Carter", "Football", "CB", "Senior", 76.3, "Samford");
+INSERT INTO Athletes VALUES ("Keaton", "Carter", "Football", "CB", "Freshman", 45.2, "Samford");
+INSERT INTO Athletes VALUES ("Jacob", "Peters", "Football", "CB", "Sophomore", 64.1, "Samford");
+INSERT INTO Athletes VALUES ("Mithcell", "Owen", "Football", "CB", "Freshman", 35.2, "Samford");
+INSERT INTO Athletes VALUES ("Miller", "Karrh", "Football", "CB", "Freshman", 52.3, "Samford");
+INSERT INTO Athletes VALUES ("Teddy", "Bullock", "Football", "CB", "Freshman", 65.2, "Samford");
+
+
+#Rightbacks
+INSERT INTO Athletes VALUES ("P.J.", "Macdonald", "Football", "RB", "Freshman", 23.1, "Samford");
+INSERT INTO Athletes VALUES ("DeMarcus", "Ware", "Football", "RB", "Senior", 76.2, "Samford");
+INSERT INTO Athletes VALUES ("Jay", "Stanton", "Football", "RB", "Junior", 23.6, "Samford");
+INSERT INTO Athletes VALUES ("Jocquet", "Jiles", "Football", "RB", "Junior", 47.1, "Samford");
+INSERT INTO Athletes VALUES ("Ty", "Boyles", "Football", "RB", "Senior", 65.1, "Samford");
+INSERT INTO Athletes VALUES ("DeAndre", "Williams", "Football", "RB", "Graduate", 45.2, "Samford");
+INSERT INTO Athletes VALUES ("Dakota", "Chapman", "Football", "RB", "Graduate", 57.1, "Samford");
+INSERT INTO Athletes VALUES ("John", "Collins", "Football", "RB", "Freshman", 72.1, "Samford");
+
+#Linebackers
+INSERT INTO Athletes VALUES ("David", "Coltrane", "Football", "LB", "Freshman", 62.1, "Samford");
+INSERT INTO Athletes VALUES ("Camden", "Kuhn", "Football", "LB", "Freshman", 12.1, "Samford");
+INSERT INTO Athletes VALUES ("Nathan", "East", "Football", "LB", "Graduate", 34.1, "Samford");
+INSERT INTO Athletes VALUES ("Copeland", "Petitfils", "Football", "LB", "Freshman", 23.5, "Samford");
+INSERT INTO Athletes VALUES ("Josaih", "Cotton", "Football", "LB", "Sophomore", 45.6, "Samford");
+INSERT INTO Athletes VALUES ("Noah", "Martin", "Football", "LB", "Sophomore", 43.1, "Samford");
+INSERT INTO Athletes VALUES ("Trimarcus", "Cheeks", "Football", "LB", "Junior", 34.6, "Samford");
+INSERT INTO Athletes VALUES ("Evan", "Craighead", "Football", "LB", "Freshman", 26.7, "Samford");
+INSERT INTO Athletes VALUES ("Trent", "Shedd", "Football", "LB", "Junior", 71.2, "Samford");
+INSERT INTO Athletes VALUES ("C.J.", "Paymon", "Football", "LB", "Sophomore", 12.4, "Samford");
+INSERT INTO Athletes VALUES ("Thomas", "Neville", "Football", "LB", "Sophomore", 56.2, "Samford");
+INSERT INTO Athletes VALUES ("Slade", "Ziegler", "Football", "LB", "Junior", 56.8, "Samford");
+INSERT INTO Athletes VALUES ("Tate", "Taylor", "Football", "LB", "Freshman", 56.1, "Samford");
+INSERT INTO Athletes VALUES ("Harrison", "Saunders", "Football", "LB", "Freshman", 45.3, "Samford");
+
+#Wide receiver
+INSERT INTO Athletes VALUES ("Montrell", "Washington", "Football", "WR", "Senior", 89.6, "Samford");
+INSERT INTO Athletes VALUES ("J.R.", "Tran-Reno", "Football", "WR", "Junior", 34.6, "Samford");
+INSERT INTO Athletes VALUES ("Lawson", "Pratt", "Football", "WR", "Freshman", 67.3, "Samford");
+INSERT INTO Athletes VALUES ("Ty", "King", "Football", "WR", "Junior", 64.2, "Samford");
+INSERT INTO Athletes VALUES ("Torrence", "Pollard", "Football", "WR", "Senior", 63.5, "Samford");
+INSERT INTO Athletes VALUES ("Jai-Rus", "Creamer", "Football", "WR", "Senior", 85.3, "Samford");
+INSERT INTO Athletes VALUES ("Carson", "Goold", "Football", "WR", "Freshman", 56.3, "Samford");
+INSERT INTO Athletes VALUES ("Isaiah", "Causey", "Football", "WR", "Freshman", 23.5, "Samford");
+INSERT INTO Athletes VALUES ("Bradley", "Ellis", "Football", "WR", "Junior", 26.3, "Samford");
+INSERT INTO Athletes VALUES ("Caleb", "Durham-Honer", "Football", "WR", "Sophomore", 53.1, "Samford");
+INSERT INTO Athletes VALUES ("Nick", "speros", "Football", "WR", "Freshman", 72.3, "Samford");
+INSERT INTO Athletes VALUES ("Darius", "Daniel", "Football", "WR", "Sophomore", 12.3, "Samford");
+INSERT INTO Athletes VALUES ("Peyton", "Ringer", "Football", "WR", "Junior", 72.4, "Samford");
+INSERT INTO Athletes VALUES ("Deuce", "Flowers", "Football", "WR", "Freshman", 71.4, "Samford");
+INSERT INTO Athletes VALUES ("Titus", "Gardner", "Football", "WR", "Junior", 53.2, "Samford");
+INSERT INTO Athletes VALUES ("Kendall", "Watson", "Football", "WR", "Senior", 84.2, "Samford");
+INSERT INTO Athletes VALUES ("Wesley", "Carlock", "Football", "WR", "Freshman", 43.2, "Samford");
+INSERT INTO Athletes VALUES ("Jason", "Houston", "Football", "WR", "Sophomore", 65.2, "Samford");
+
+#Punters
+INSERT INTO Athletes VALUES("Bradley", "Porcellato", "Football", "P", "Senior", 52.4, "Samford");
+
+#Kicker
+INSERT INTO Athletes VALUES ("Coby", "Neenan", "Football", "K", "Senior", 34.6, "Samford");
+INSERT INTO Athletes VALUES ("Henry", "Bishop", "Football", "K", "Freshman", 54.2, "Samford");
+INSERT INTO Athletes VALUES ("Zach", "Williams", "Football", "K", "Junior", 76.3, "Samford");
+
+#Safety
+INSERT INTO Athletes VALUES ("Midnight", "Stward", "Football", "S", "Freshman", 43.5, "Samford");
+INSERT INTO Athletes VALUES ("Shelton", "Quarles Jr.", "Football", "S", "Freshman", 27.3, "Samford");
+INSERT INTO Athletes VALUES ("Ty", "Herring", "Football", "S", "Senior", 12.7, "Samford");
+INSERT INTO Athletes VALUES ("J.T.", "Swanson", "Football", "S", "Freshman", 64.2, "Samford");
+INSERT INTO Athletes VALUES ("Lamar", "Anderson", "Football", "S", "Senior", 43.2, "Samford");
+INSERT INTO Athletes VALUES ("Jonathan", "Moore", "Football", "S", "Junior", 25.6, "Samford");
+INSERT INTO Athletes VALUES ("Wade", "White", "Football", "S", "Sophomore", 34.6, "Samford");
+INSERT INTO Athletes VALUES ("Chris", "Edmonds", "Football", "S", "Junior", 72.7, "Samford");
+INSERT INTO Athletes VALUES ("Chase", "Volpi", "Football", "S", "Junior", 23.5, "Samford");
+
+#Tight Ends
+INSERT INTO Athletes VALUES ("Camden", "Simons", "Football", "TE", "Freshman", 34.2, "Samford");
+INSERT INTO Athletes VALUES ("Nathan", "Barham", "Football", "TE", "Sophomore", 36.4, "Samford");
+INSERT INTO Athletes VALUES ("Michael", "Vice", "Football", "TE", "Junior", 17.4, "Samford");
+INSERT INTO Athletes VALUES ("Michael", "Mitchler", "Football", "TE", "Freshman", 65.2, "Samford");
+
+#Defensive Ends
+INSERT INTO Athletes VALUES ("Joseph", "Mera", "Football", "DE", "Junior", 49.2, "Samford");
+INSERT INTO Athletes VALUES ("Trey", "Parker", "Football", "DE", "Freshman", 36.2, "Samford");
+INSERT INTO Athletes VALUES ("Jamal", "Thompson", "Football", "DE", "Freshman", 23.5, "Samford");
+INSERT INTO Athletes VALUES ("J.T.", "May", "Football", "DE", "Sophomore", 37.3, "Samford");
+INSERT INTO Athletes VALUES ("Kobe", "Stewart", "Football", "DE", "Freshman", 56.2, "Samford");
+INSERT INTO Athletes VALUES ("Daniel", "Bettis", "Football", "DE", "Freshman", 42.5, "Samford");
+INSERT INTO Athletes VALUES ("Nelson", "Jordan", "Football", "DE", "Senior", 64.2, "Samford");
+INSERT INTO Athletes VALUES ("Johnny", "Johnson", "Football", "DE", "Freshman", 75.2, "Samford");
+INSERT INTO Athletes VALUES ("Nick", "Jackson", "Football", "DE", "Sophomore", 34.2, "Samford");
+
+#Defensive Tackle
+INSERT INTO Athletes VALUES ("Tay", "Berry", "Football", "DT", "Senior", 25.3, "Samford");
+INSERT INTO Athletes VALUES ("Rush", "Boyett", "Football", "DT", "Freshman", 46.2, "Samford");
+INSERT INTO Athletes VALUES ("Brenden", "Reed", "Football", "DT", "Freshman", 12.4, "Samford");
+INSERT INTO Athletes VALUES ("Justin", "Hayes", "Football", "DT", "Junior", 65.2, "Samford");
+INSERT INTO Athletes VALUES ("Braedon", "Royal", "Football", "DT", "Junior", 12.4, "Samford");
+INSERT INTO Athletes VALUES ("Francisco", "Jimenez", "Football", "DT", "Junior", 86.2, "Samford");
+INSERT INTO Athletes VALUES ("Armond", "Lloyd", "Football", "DT", "Graduate", 56.2, "Samford");
+INSERT INTO Athletes VALUES ("Seth", "Simmer", "Football", "DT", "Senior", 25.3, "Samford");
+
+#Offensive Lineman
+INSERT INTO Athletes VALUES ("William", "Purdy", "Football", "OL", "Freshman", 26.2, "Samford");
+INSERT INTO Athletes VALUES ("Beau", "Myers", "Football", "OL", "Junior", 34.6, "Samford");
+INSERT INTO Athletes VALUES ("Luke", "Byrne", "Football", "OL", "Sophomore", 56.2, "Samford");
+INSERT INTO Athletes VALUES ("Cooper", "Frazier", "Football", "OL", "Sophomore", 64.2, "Samford");
+INSERT INTO Athletes VALUES ("Chris", "Noble", "Football", "OL", "Sophomore", 67.2, "Samford");
+INSERT INTO Athletes VALUES ("Jabari", "Brooks", "Football", "OL", "Sophomore", 45.2, "Samford");
+INSERT INTO Athletes VALUES ("Zach", "Bond", "Football", "OL", "Sophomore", 56.8, "Samford");
+INSERT INTO Athletes VALUES ("Austin", "Guyse", "Football", "OL", "Junior", 73.5, "Samford");
+INSERT INTO Athletes VALUES ("Peter", "Renkoski", "Football", "OL", "Junior", 34.2, "Samford");
+INSERT INTO Athletes VALUES ("J.D.", "Beall", "Football", "OL", "Senior", 67.4, "Samford");
+INSERT INTO Athletes VALUES ("Jayson", "Webb", "Football", "OL", "Freshman", 67.2, "Samford");
+INSERT INTO Athletes VALUES ("Gavin", "Orr", "Football", "OL", "Senior", 68.3, "Samford");
+INSERT INTO Athletes VALUES ("Kasra", "Bojnordi", "Football", "OL", "Freshman", 38.4, "Samford");
+INSERT INTO Athletes VALUES ("James", "Motley-Simmons", "Football", "OL", "Sophomore", 49.7, "Samford");
+INSERT INTO Athletes VALUES ("Zach", "Brown", "Football", "OL", "Freshman", 67.4, "Samford");
+INSERT INTO Athletes VALUES ("Chance", "Butts", "Football", "OL", "Sophomore", 67.3, "Samford");
+INSERT INTO Athletes VALUES ("Donovan", "Hawkins", "Football", "OL", "Sophomore", 67.2, "Samford");
+
+#Long Snappers
+INSERT INTO Athletes VALUES ("Griffin", "Hicks", "Football", "LS", "Junior", 88.3, "Samford");
+INSERT INTO Athletes VALUES ("Camren", "Wood", "Football", "LS", "Junior", 89.6, "Samford");
+INSERT INTO Athletes VALUES ("Tyler", "Russell", "Football", "LS", "Graduate", 56.8, "Samford");
+INSERT INTO Athletes VALUES ("Alex", "Applefield", "Football", "LS", "Freshman", 67.9, "Samford");
+
+#BEGIN SELECTIONS
+SELECT * FROM Athletes ORDER BY globalRating DESC;
+
+#SELECT COUNT(*) FROM Athletes;
+
+CREATE TABLE Quarterbacks (
+SELECT * FROM Athletes WHERE position = "QB"
+);
+SELECT * FROM Quarterbacks;
+
+CREATE TABLE highestScores (
+SELECT * FROM Athletes WHERE globalRating > 70
+);
+SELECT * FROM highestScores ORDER BY globalRating DESC;
+
+#DROP TABLE Quarterbacks;
+#DROP TABLE highestScores;
