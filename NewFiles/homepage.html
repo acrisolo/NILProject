@@ -4,54 +4,107 @@
 <head>
   <link href="homepage_style.css" type="text/css"
         rel="stylesheet" />
+
+  <script src="homepage.js"></script>
 </head>
 
 <body>
- 
-<div id="banner">
-    <div id="wrapper">
-        <div id="container">
-              <img class="banner-img" img src="Images/Header.png" alt="NIL Header"></a>
-        </div>
-    </div>
-</div>
 
-  <br>
+
+  <h1>NIL Stat Scraper</h1>
+  <!-- Begin code slide nav bar
   <a href="homepage.html"><button class="button button1">Home</button></a>
-  <a href="player_list.html"><button class="button button6">Player List</button></a>
   <a href="university_list.html"><button class="button button2">University List</button></a>
   <a href="sport_list.html"><button class="button button3">Sport List</button></a>
   <a href="year_list.html"><button class="button button4">Year List</button></a>
   <button class="button button5" onclick="alert('Hello world!')">Help</button>
+-->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="homepage.html">Home</a>
+  <a href="university_list.html">Universities</a>
+  <a href="sport_list.html">Sports</a>
+  <a href="year_list.html">Year</a>
+</div>
+
+<!-- Use any element to open the sidenav -->
+<!--<span onclick="openNav()">open</span>-->
+<div class="buttonnav">
+<span onclick="openNav()"><button>Menu</span>
+</div>
+
   <hr>
   <h2>Top Three Athletes</h2>
   <br>
 
   <div class="row">
-    <div class="column">
-      <img src="Images/LiamWelch.jpg"
-        height="300px" width="250px">
-      <p><b>Name:</b> <a href="lwelch.html">Liam Welch</a></p>
-      <p><b>Sport:</b> Football - QB</p>
-      <p><b>University:</b> Samford</p>
-    </div>
-  
-    <div class="column">
-      <img src="Images/QuincyCrittendon.jpeg"
-        height="300px" width="250px">
-      <p><b>Name:</b> <a href="qcritt.html">Quincy Crittendon</a></p>
-      <p><b>Sport:</b> Football - QB</p>
-      <p><b>University:</b> Samford</p>
-    </div>
-  
-    <div class="column">
-        <img src="Images/AsherMorgan.jpeg"
-          height="300px" width="250px">
-        <p><b>Name:</b> <a href="amorgan.html">Asher Morgan</a></p>
-        <p><b>Sport:</b> Football - QB</p>
-        <p><b>University:</b> Samford</p>
+  <div class="column">
+    <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="LiamWelch.jpg" alt="Liam Welch" style="width:250px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>Liam Welch</h1>
+        <p>Football</p>
+        <p>Quarter Back</p>
+        <p>Samford University</p>
+      </div>
     </div>
   </div>
+  </div>
+
+  <div class="column">
+    <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="QuincyCrittendon.jpeg" alt="Quincy Crittendon" style="width:250px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>Quincy Crittendon</h1>
+        <p>Football</p>
+        <p>Quarter Back</p>
+        <p>Samford University</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="column">
+    <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="AsherMorgan.jpeg" alt="Asher Morgan" style="width:250px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>Asher Morgan</h1>
+        <p>Football</p>
+        <p>Quarter Back</p>
+        <p>Samford University</p>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!--
+  <div class="column">
+    <img src="QuincyCrittendon.jpeg"
+      height="300px" width="250px">
+    <p><b>Name:</b> Quincy Crittendon</p>
+    <p><b>Sport:</b> Football - QB</p>
+    <p><b>University:</b> Samford</p>
+  </div>
+
+  <div class="column">
+      <img src="AsherMorgan.jpeg"
+        height="300px" width="250px">
+      <p><b>Name:</b> Asher Morgan</p>
+      <p><b>Sport:</b> Football - QB</p>
+      <p><b>University:</b> Samford</p>
+  </div>
+</div>
+-->
 
   <h2>How We Create a Score</h2>
   <br>
